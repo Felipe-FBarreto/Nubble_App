@@ -4,7 +4,6 @@ import {Text} from './src/components/Text/Text';
 import Button from './src/components/Button/Button';
 import {ThemeProvider} from '@shopify/restyle';
 import {theme} from './src/theme/theme';
-import {Box} from './src/components/Box/Box';
 
 const App = () => {
   return (
@@ -18,10 +17,7 @@ const App = () => {
         <Text preset="headingLarge" italic>
           Nubble
         </Text>
-        <Button title="Entrar" />
-        <Box marginTop="s24" width="100%">
-          <Button loading title="loading" />
-        </Box>
+        <Button title="Entrar" backgroundColor="primary" mt="s40" />
       </SafeAreaView>
     </ThemeProvider>
   );
