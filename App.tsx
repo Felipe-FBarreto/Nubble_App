@@ -17,7 +17,8 @@ const App = () => {
         <Text preset="headingLarge" italic>
           Nubble
         </Text>
-        <Button title="Entrar" backgroundColor="primary" mt="s40" />
+        <Button preset="primary" title="Entrar" />
+        <Button preset="outline" loading mt="s24" title="Entrar" />
       </SafeAreaView>
     </ThemeProvider>
   );
