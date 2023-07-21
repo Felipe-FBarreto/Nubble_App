@@ -4,6 +4,9 @@ import {Text} from './src/components/Text/Text';
 import Button from './src/components/Button/Button';
 import {ThemeProvider} from '@shopify/restyle';
 import {theme} from './src/theme/theme';
+import {EyeOffIcon} from './src/assets/icons/EyeOffIcon';
+import {EyeOnIcon} from './src/assets/icons/EyeOnIcon';
+import {Icon} from './src/components/Icon/Icon';
 
 const App = () => {
   return (
@@ -11,14 +14,13 @@ const App = () => {
       <SafeAreaView
         style={{
           paddingHorizontal: 20,
-          // justifyContent: 'center',
-          // alignItems: 'center',
         }}>
         <Text preset="headingLarge" italic>
           Nubble
         </Text>
-        <Button preset="primary" title="Entrar" />
-        <Button preset="outline" loading mt="s24" title="Entrar" />
+        <EyeOffIcon size={100} color="pink" />
+        <EyeOnIcon size={100} color="black" />
+        <Icon name="eyeOf" />
       </SafeAreaView>
     </ThemeProvider>
   );
