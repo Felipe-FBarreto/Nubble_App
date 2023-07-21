@@ -18,9 +18,8 @@ const App = () => {
         <Text preset="headingLarge" italic>
           Nubble
         </Text>
-        <EyeOffIcon size={100} color="pink" />
-        <EyeOnIcon size={100} color="black" />
-        <Icon name="eyeOf" />
+        <Icon color="carrotSecondary" size={50} name="eyeOff" />
+        <Icon color="carrotSecondary" size={50} name="bookmark" />
       </SafeAreaView>
     </ThemeProvider>
   );
